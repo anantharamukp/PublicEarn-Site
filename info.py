@@ -31,15 +31,15 @@ CODE = (environ.get('CODE', 'https://graph.org/file/f96562518138b9132abf8.jpg'))
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 
-PICS = (environ.get('PICS', 'https://graph.org/file/8cd764fbdf3ccd34abe22.jpg')).split() #SAMPLE PIC
+PICS = (environ.get('PICS', 'https://telegra.ph/file/13a6a352fb9dddd13f065.jpg')).split() #SAMPLE PIC
 NOR_IMG = environ.get("NOR_IMG", "https://graph.org/file/8cd764fbdf3ccd34abe22.jpg")
 MELCOW_VID = environ.get("MELCOW_VID", "https://t.me/howtodownload189/4")
 SPELL_IMG = environ.get("SPELL_IMG", "https://te.legra.ph/file/15c1ad448dfe472a5cbb8.jpg")
 
 # Admins, Channels & Users
-USERNAME = environ.get("USERNAME", "https://t.me/I_Am_MrAK")
+USERNAME = environ.get("USERNAME", "https://t.me/Anand_2K")
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1735392935 ').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002044250842').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002021249374').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 PREMIUM_USER = [int(user) if id_pattern.search(user) else user for user in environ.get('PREMIUM_USER', '').split()]
@@ -61,7 +61,7 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 #Shortner Variables 
 VERIFY = bool(environ.get('VERIFY', False))
-TUTORIAL = environ.get('TUTORIAL', 'https://t.me/MrAK_LinkZz/5')
+TUTORIAL = environ.get('TUTORIAL', 'https://t.me/AR_linkz/2')
 IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', True))
 SHORTLINK_URL = environ.get('SHORTLINK_URL', 'gyanilinks.com')
 SHORTLINK_API = environ.get('SHORTLINK_API', '76f21de69c69cbd8df3b91f0c00c4d90e0a664a1')
@@ -75,7 +75,7 @@ MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
 PORT = environ.get("PORT", "8080")
 GRP_LNK = environ.get('GRP_LNK', 'https://t.me/+-VlJFDkAQ4cyMjU1')
 CHNL_LNK = environ.get('CHNL_LNK', 'http://t.me/+uI9i-5DW5L8zM2Q1')
-WRM = environ.get('WRM', 'https://t.me/MrAK_LinkZ')
+WRM = environ.get('WRM', 'https://t.me/AR_linkz')
 MSG_ALRT = environ.get('MSG_ALRT', '💖 Hello Nanba and Nanbis 💖')
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001857257903'))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', '+-VlJFDkAQ4cyMjU1')
