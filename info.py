@@ -13,13 +13,13 @@ def is_enabled(value, default):
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', ''))
-API_HASH = environ.get('API_HASH', '')
-BOT_TOKEN = environ.get('BOT_TOKEN', "")
+API_ID = int(environ.get('API_ID', '27335730'))
+API_HASH = environ.get('API_HASH', 'ae5a5f660ffdf3e08997d493c32932f5')
+BOT_TOKEN = environ.get('BOT_TOKEN', "6068679720:AAFn-VPUqZZqf9BCcFY0N4-AGQ5_VL4WyG8")
 
 #stream link shortner
 STREAM_SITE = (environ.get('STREAM_SITE', 'gyanilinks.com'))
-STREAM_API = (environ.get('STREAM_API', 'b6696a9a3a4d95031b076b9b8b40e163f9f29ff5'))
+STREAM_API = (environ.get('STREAM_API', '76f21de69c69cbd8df3b91f0c00c4d90e0a664a1'))
 
 # add premium logs channel id
 PREMIUM_LOGS = int(environ.get('PREMIUM_LOGS', '-1002122060084'))
@@ -38,24 +38,24 @@ SPELL_IMG = environ.get("SPELL_IMG", "https://te.legra.ph/file/15c1ad448dfe472a5
 
 # Admins, Channels & Users
 USERNAME = environ.get("USERNAME", "https://t.me/I_Am_MrAK")
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6072149828 5773687944').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1735392935 ').split()]
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002044250842').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 PREMIUM_USER = [int(user) if id_pattern.search(user) else user for user in environ.get('PREMIUM_USER', '').split()]
-auth_channel = environ.get('AUTH_CHANNEL', '-1002145921498')
-auth_grp = environ.get('AUTH_GROUP')
+auth_channel = environ.get('AUTH_CHANNEL')
+auth_grp = environ.get('AUTH_GROUP', '-1002122293467')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
-support_chat_id = environ.get('SUPPORT_CHAT_ID', '-1001955218723')
-reqst_channel = environ.get('REQST_CHANNEL_ID', '-1002146500872')
+support_chat_id = environ.get('SUPPORT_CHAT_ID', '-1002122293467')
+reqst_channel = environ.get('REQST_CHANNEL_ID', '-1002021249374')
 REQST_CHANNEL = int(reqst_channel) if reqst_channel and id_pattern.search(reqst_channel) else None
 SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(support_chat_id) else None
 NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", False))
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "")
-DATABASE_NAME = environ.get('DATABASE_NAME', "")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Anantharamu:Anand15112003@cluster0.c0r1eic.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_NAME = environ.get('DATABASE_NAME', "Anantharamu")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 
@@ -64,7 +64,7 @@ VERIFY = bool(environ.get('VERIFY', False))
 TUTORIAL = environ.get('TUTORIAL', 'https://t.me/MrAK_LinkZz/5')
 IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', True))
 SHORTLINK_URL = environ.get('SHORTLINK_URL', 'gyanilinks.com')
-SHORTLINK_API = environ.get('SHORTLINK_API', 'b6696a9a3a4d95031b076b9b8b40e163f9f29ff5')
+SHORTLINK_API = environ.get('SHORTLINK_API', '76f21de69c69cbd8df3b91f0c00c4d90e0a664a1')
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', True))
 
 #others 
@@ -73,12 +73,12 @@ DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in enviro
 MAX_B_TN = environ.get("MAX_B_TN", "5")
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
 PORT = environ.get("PORT", "8080")
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/+1xujDl3NzN02N2Jl')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/MrAK_LinkZz')
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/+-VlJFDkAQ4cyMjU1')
+CHNL_LNK = environ.get('CHNL_LNK', 'http://t.me/+uI9i-5DW5L8zM2Q1')
 WRM = environ.get('WRM', 'https://t.me/MrAK_LinkZ')
-MSG_ALRT = environ.get('MSG_ALRT', 'Hello Nanbha and Nanbis ❤️')
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002053122232'))
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', '+1xujDl3NzN02N2Jl')
+MSG_ALRT = environ.get('MSG_ALRT', '💖 Hello Nanba and Nanbis 💖')
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001857257903'))
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', '+-VlJFDkAQ4cyMjU1')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
 IMDB = is_enabled((environ.get('IMDB', "False")), True)
 AUTO_FFILTER = is_enabled((environ.get('AUTO_FFILTER', "True")), True)
