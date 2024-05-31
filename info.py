@@ -18,8 +18,8 @@ API_HASH = environ.get('API_HASH', 'ae5a5f660ffdf3e08997d493c32932f5')
 BOT_TOKEN = environ.get('BOT_TOKEN', "6068679720:AAFn-VPUqZZqf9BCcFY0N4-AGQ5_VL4WyG8")
 
 #stream link shortner
-STREAM_SITE = (environ.get('STREAM_SITE', 'gyanilinks.com'))
-STREAM_API = (environ.get('STREAM_API', '76f21de69c69cbd8df3b91f0c00c4d90e0a664a1'))
+STREAM_SITE = (environ.get('STREAM_SITE', 'publicearn.com'))
+STREAM_API = (environ.get('STREAM_API', 'c85267c0cbf5768e243e55ba9617033baabe5400'))
 
 # add premium logs channel id
 PREMIUM_LOGS = int(environ.get('PREMIUM_LOGS', '-1002122060084'))
@@ -61,10 +61,10 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 #Shortner Variables 
 VERIFY = bool(environ.get('VERIFY', False))
-TUTORIAL = environ.get('TUTORIAL', 'https://t.me/AR_linkz/2')
+TUTORIAL = environ.get('TUTORIAL', 'https://t.me/AR_linkz/10')
 IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', True))
-SHORTLINK_URL = environ.get('SHORTLINK_URL', 'gyanilinks.com')
-SHORTLINK_API = environ.get('SHORTLINK_API', '76f21de69c69cbd8df3b91f0c00c4d90e0a664a1')
+SHORTLINK_URL = environ.get('SHORTLINK_URL', 'publicearn.com')
+SHORTLINK_API = environ.get('SHORTLINK_API', 'c85267c0cbf5768e243e55ba9617033baabe5400')
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', True))
 
 #others 
